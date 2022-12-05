@@ -1,0 +1,174 @@
+body{
+    font-family: Bahnschrift, system-ui;
+}
+nav {
+    background-color: darkslategrey;
+    padding: .8em .5em;
+    min-height: 4em;
+    height: fit-content;
+}
+
+footer {
+    text-align: center;
+    min-height: 50px;
+    background-color: darkslategrey;
+    font-weight: lighter;
+    color: azure;
+}
+
+.form-login-main {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+#upload-pic {
+    color: grey;
+    font-size: 20pt;
+    margin: 50% 0;
+}
+
+.home-link {
+    font-weight: lighter;
+    font-size: 16pt;
+    color: antiquewhite;
+    text-decoration: none !important;
+    margin-left: .5em;
+    display: inline-block;
+}
+.home-link:hover {
+    color: antiquewhite;
+    text-decoration: none !important;
+    text-underline: none !important;
+    cursor: pointer;
+}
+
+.auth-hello {
+    font-weight: lighter;
+    font-size: 18pt;
+    color: antiquewhite;
+    margin-left: 1em;
+}
+
+.auth-avatar {
+    width: 2.33em;
+    height: 2.33em;
+    object-fit: cover;
+    border-radius: .2em;
+}
+
+.profile-avatar {
+    opacity: 1;
+    display: block;
+    height: 12em;
+    width: 12em;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.update-image {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile-picture-container {
+    position: relative;
+
+}
+
+.profile-picture-container:hover .profile-avatar {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.profile-picture-container:hover .update-image {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image:hover .overlay {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.demos {
+    background-color: indigo;
+    min-height: 2em !important;
+}
+
+.demos ul {
+    list-style: none;
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+.demos li {
+    margin: 0 1em;
+}
+
+.demos a {
+    font-size: 15pt;
+    font-weight: bolder;
+    font-family: Corbel, ui-serif;
+    color: antiquewhite;
+}
+
+.demos a:hover {
+    cursor: pointer;
+    color: crimson;
+    text-decoration: none;
+}
+
+.profile-button {
+    width: 100%;
+}
+
+small {
+    margin-left: 0.2em;
+}
+.filter-btn:hover{
+    background-color: darkslategrey !important;
+}
+.active{
+    background-color: darkslategrey !important;
+}
+.form-check-input:checked{
+    background-color: darkslategrey !important;
+    border-color: darkslategrey !important;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 .25rem rgba(47, 79, 79, 0.1);
+}
+
+@media screen and (max-width: 850px) {
+    .form-login-main {
+        float: none;
+    }
+
+    .form-login-main > * {
+        width: 100% !important;
+        margin-top: .2em;
+    }
+
+    .form-login-main > input:nth-child(4) {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .profile-panel {
+        border-right: none !important;
+    }
+    .home-link {
+        margin-bottom: .8em;
+    }
+}
